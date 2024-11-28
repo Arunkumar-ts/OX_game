@@ -107,7 +107,7 @@ function end(p){
             alert("Player 1 is win! Game Over!");
         }
         else{
-            alert("Player 1 is win! Game Over!");
+            alert("Player 2 is win! Game Over!");
         }
         let boxitem=document.querySelectorAll(".box");
         boxitem.forEach((i)=>{
