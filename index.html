@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start_container">
+        <div class="left">
+            <h1>Player 1</h1>
+            <h1 class="symbol">Choose your symbole</h1>
+            <div class="options">
+                <button onclick="Osymbole()" class="option1">O</button>
+                <button onclick="Xsymbole()" class="option2">X</button>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Player 2</h1>
+            <h1 class="symbol">Choose your symbole</h1>
+            <div class="options">
+                <button onclick="Osymbole1()" class="option3">O</button>
+                <button onclick="Xsymbole2()" class="option4">X</button>
+            </div>
+            <button onclick="start()" class="Sbtn">Start</button>
+        </div>
+        <div class="gamepage">
+            <div class="boxs">
+                <div class="p1details">
+                    <h1>Player 1</h1>
+                    <h1 id="p1h2"></h1>
+                    <h2></h2>
+                </div>
+                <div class="box1">
+                    <div class="box" onclick="dof(event)" id="b1"></div>
+                    <div class="box" onclick="dof(event)" id="b2"></div>
+                    <div class="box" onclick="dof(event)" id="b3"></div>
+                </div>
+                <div class="box2">
+                    <div class="box" onclick="dof(event)" id="b4"></div>
+                    <div class="box" onclick="dof(event)" id="b5"></div>
+                    <div class="box" onclick="dof(event)" id="b6"></div>
+                </div>       
+                <div class="box3">
+                    <div class="box" onclick="dof(event)" id="b7"></div>
+                    <div class="box" onclick="dof(event)" id="b8"></div>
+                    <div class="box" onclick="dof(event)" id="b9"></div>
+                </div>
+                <div class="p2details">
+                    <h1>Player 2</h1>
+                    <h1 id="p2h2"></h1>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
