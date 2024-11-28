@@ -106,7 +106,7 @@
     justify-content: center;
     align-items: center;
 }
-.boxs .p1details ,.p2details{
+.boxs .p1details , .p2details{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -119,4 +119,35 @@
 }
 .p2details{
     right:-300px;
+}
+@media screen and (max-width:500px){
+    .symbol1{
+        font-size: 22px;
+    }
+    .symbol{
+        font-size: 20px;
+        text-align: center;
+    }
+    .boxs .box{
+        height: 70px;
+        width: 70px;
+        background-color: rgb(147, 147, 197);
+        margin: 5px;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .p1details{
+        font-size: 10px;
+        left: 90px;
+        bottom:-350px;
+    }
+    .p2details{
+        font-size: 10px;
+        left: -280px;
+        top:-90px;
+    }
 }
