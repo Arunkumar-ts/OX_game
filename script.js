@@ -57,7 +57,7 @@ function dof(event){
     }
     if(count==10){
         setTimeout(()=>{
-            alert("Game Over!");
+            alert("Draw match(Tie)!");
             let conf=confirm("Do you want to play again?");
             if(conf){
                 location.reload();
