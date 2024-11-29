@@ -18,7 +18,7 @@
     background-image: linear-gradient(to right,rgb(144, 221, 144),rgb(147, 147, 197));
     left:0;
     top:0;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
 }
 .start_container .left , .right{
     display: flex;
@@ -35,7 +35,7 @@
     background-image: linear-gradient(to right,rgb(147, 147, 197),rgb(144, 221, 144));
     right:0;
     top:0;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
 }
 .start_container .right .Sbtn{
     position:absolute;
