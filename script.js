@@ -62,10 +62,10 @@ function dof(event){
             if(conf){
                 location.reload();
             }
-        },10);
+        },100);
     }
     if(count>=5){
-        let play1=0,play2;
+        let play1=0,play2=0;
         for(let i=0;i<8;i++){
             for(let j=0;j<3;j++){
                 for(let z=0;z<p1var;z++){
@@ -117,7 +117,7 @@ function end(p){
         if(conf){
             location.reload();
         }
-    },10);
+    },100);
     
 }
 function symbolchange(){
