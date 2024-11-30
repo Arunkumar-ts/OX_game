@@ -15,6 +15,7 @@ var combinations=[
 ];
 var p1items=[];
 var p2items=[];
+var tie=1;
 function start(){
     if(player1){
         let left=document.querySelector(".left");
@@ -55,15 +56,6 @@ function dof(event){
         let p2h2=document.querySelector('#p2h2');
         p2h2.textContent=player2;
     }
-    if(count==10){
-        setTimeout(()=>{
-            alert("Draw match(Tie)!");
-            let conf=confirm("Do you want to play again?");
-            if(conf){
-                location.reload();
-            }
-        },100);
-    }
     if(count>=5){
         let play1=0,play2=0;
         for(let i=0;i<8;i++){
@@ -80,15 +72,27 @@ function dof(event){
                 }
             }
             if(play1==3){
+                tie=0;
                 end("p1");
+                break;
             }
             if(play2==3){
+                tie=0;
                 end("p2");
+                break;
             }
             play1=0;
             play2=0;
         }
-
+    }
+    if(count==10 && tie==1){
+        setTimeout(()=>{
+            alert("Draw match(Tie)!");
+            let conf=confirm("Do you want to play again?");
+            if(conf){
+                location.reload();
+            }
+        },100);
     }
 }
 function end(p){
